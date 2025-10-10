@@ -18,12 +18,25 @@ public class animal {
     @Column(nullable = false)
     private String description;
 
+    @Column(nullable = false)
+    private String origin;
+
+    @Column(nullable = false)
+    private String dangerLevel;
+
     public Animal() {
     }
 
-    public Animal(String name, String description) {
+    public Animal(String name, String description, String origin, String dangerLevel) {
         this.name = name;
         this.description = description;
+        this.origin = origin;
+        this.dangerLevel = dangerLevel;
+    }
+
+        this.name = name;
+        this.description = description;
+        this.origin = origin;
     }
 
     // Getters and Setters
