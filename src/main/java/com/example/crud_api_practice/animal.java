@@ -1,3 +1,5 @@
+package com.example.crud_api_practice;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "animals")
-public class animal {
+public class Animal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long animalId;
@@ -34,19 +36,10 @@ public class animal {
         this.dangerLevel = dangerLevel;
     }
 
-        this.name = name;
-        this.description = description;
-        this.origin = origin;
-    }
-
-    // Getters and Setters
     public Long getAnimalId() {
         return animalId;
     }
 
-    public void setAnimalId(Long animalId) {
-        this.animalId = animalId;
-    }
 
     public String getName() {
         return name;
@@ -63,3 +56,20 @@ public class animal {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+    public String getDangerLevel() {
+        return dangerLevel;
+    }
+
+    public void setDangerLevel(String dangerLevel) {
+        this.dangerLevel = dangerLevel;
+    }
+}

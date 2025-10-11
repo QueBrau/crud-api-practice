@@ -1,3 +1,5 @@
+package com.example.crud_api_practice;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,9 +11,14 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import com.example.crud_api_practice.Animal;
+import com.example.crud_api_practice.AnimalService;
 
 @RestController
 public class AnimalController {
+
+    @Autowired
+    private AnimalService animalService;
 
       /**
    * Endpoint to get all animals
@@ -100,4 +107,4 @@ public class AnimalController {
   public Animal readJson() {
     return animalService.readJson();
   }
-
+}

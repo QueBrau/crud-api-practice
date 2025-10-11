@@ -1,3 +1,5 @@
+package com.example.crud_api_practice;
+
 import java.io.IOException;
 import java.io.File;
 
@@ -6,7 +8,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.example.animal.Animal;
+import com.example.crud_api_practice.Animal;
+import com.example.crud_api_practice.AnimalRepository;
 
 @Service
 public class AnimalService {
@@ -90,7 +93,7 @@ public class AnimalService {
    *
    * @return The animal object read from the JSON file
    */
-  public Object readJson() {
+  public Animal readJson() {
     ObjectMapper objectMapper = new ObjectMapper();
     try {
       return objectMapper.readValue(new File("animals.json"), Animal.class);
@@ -98,7 +101,6 @@ public class AnimalService {
       e.printStackTrace();
       return null;
     }
-
   }
 
     /**
@@ -115,5 +117,5 @@ public class AnimalService {
       e.printStackTrace();
       return "Error writing animal to JSON file";
     }
-
   }
+}
