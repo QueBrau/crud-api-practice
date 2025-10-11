@@ -225,3 +225,4 @@ Read an Animal object from a JSON file on the server.
   "dangerLevel": "low"
 }
 ```
+Video Link: https://uncg-my.sharepoint.com/:v:/g/personal/b_pantojaes_uncg_edu/ESqwN-LbLAJBg22eUaJJU2ABU9bVUTkvDb3JcYLvpN2z4Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=AIZqQq
