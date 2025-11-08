@@ -26,14 +26,18 @@ public class Animal {
     @Column(nullable = false)
     private String dangerLevel;
 
+    @Column
+    private String image;
+
     public Animal() {
     }
 
-    public Animal(String name, String description, String origin, String dangerLevel) {
+    public Animal(String name, String description, String origin, String dangerLevel, String image) {
         this.name = name;
         this.description = description;
         this.origin = origin;
         this.dangerLevel = dangerLevel;
+        this.image = image;
     }
 
     public Long getAnimalId() {
@@ -71,5 +75,13 @@ public class Animal {
 
     public void setDangerLevel(String dangerLevel) {
         this.dangerLevel = dangerLevel;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }
